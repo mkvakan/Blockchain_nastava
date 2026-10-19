@@ -1,0 +1,172 @@
+:root {
+  --ink: #1c2430;
+  --ink-soft: #2c3848;
+  --paper: #f3efe6;
+  --card: #fffdf8;
+  --line: #e3d9c8;
+  --copper: #b85c38;
+  --copper-dark: #8c4124;
+  --muted: #5e675f;
+  --warn: #8a3d2f;
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  background: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(184, 92, 56, 0.16), transparent 32rem),
+    var(--paper);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.brand {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.nav button {
+  border: 0;
+  background: transparent;
+  color: #d9d0c3;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+}
+
+.nav button.active {
+  background: var(--ink-soft);
+  color: white;
+}
+
+.wallet {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.connect {
+  border: 0;
+  background: var(--copper);
+  color: white;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+}
+
+.connect:hover {
+  background: var(--copper-dark);
+}
+
+.wallet-note {
+  margin: 0;
+  max-width: 18rem;
+  text-align: right;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: #f0c7b4;
+}
+
+main {
+  width: min(42rem, calc(100% - 2rem));
+  margin: 2.5rem auto 3rem;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  padding: 2rem 1.75rem 2.25rem;
+  box-shadow: 0 16px 40px rgba(28, 36, 48, 0.06);
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper-dark);
+}
+
+h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin: 1.6rem 0 0.4rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.lead,
+.panel p,
+.panel li {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.lead {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+
+ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+}
+
+@media (max-width: 720px) {
+  .header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .wallet {
+    width: 100%;
+    margin-left: 0;
+    align-items: stretch;
+  }
+
+  .wallet-note {
+    max-width: none;
+    text-align: left;
+  }
+}

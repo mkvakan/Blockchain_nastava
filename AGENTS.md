@@ -1,9 +1,9 @@
 # Pravila projekta
 
 ## Projekt
-- Naziv: (upiši)
-- Zajednica: (upiši, npr. kafić "Kod Šime")
-- Opis: (jedna rečenica: što aplikacija radi i za koga)
+- Naziv: ChainLab
+- Zajednica: studentska udruga ChainLab
+- Opis: Web aplikacija udruge ChainLab za predstavljanje udruge i spajanje novčanika na Sepoliji.
 
 ## Stack (koristi točno ove verzije)
 - Frontend: Vue 3 (script setup), Pinia, Vite, u mapi frontend/

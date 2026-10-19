@@ -1,5 +1,5 @@
-# Naziv projekta
+# ChainLab
 
 Autor: Ime Prezime
 
-Jedna rečenica: što aplikacija radi i za koju zajednicu.
+Web aplikacija studentske udruge ChainLab za predstavljanje udruge i spajanje novčanika na Sepoliji.
