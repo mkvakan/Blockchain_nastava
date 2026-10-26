@@ -17,5 +17,5 @@ postavio je to-do listu tako da sam vidio što će napraviti i mogao sam promjen
 - Što je AI napravio dobro: kada je transakcija prošla, stavio je link za etherscan tako da se može vidjeti transakcija koju smo napravili
 - Što je AI napravio drugačije nego što sam očekivao: -------------
 - Što sam dodao u AGENT.md: 
-- Provjera: 
-- Commit: 
+- Provjera: Projevu sam napravio tako da sam pregledao što je sve dodao.
+- Commit: c4b6f79c085015726ee3ec337b5b7500e823eca7
