@@ -3,7 +3,7 @@
 ## Projekt
 - Naziv: ChainLab
 - Zajednica: studentska udruga ChainLab
-- Opis: Web aplikacija udruge ChainLab za predstavljanje udruge i spajanje novčanika na Sepoliji.
+- Opis: Web aplikacija udruge ChainLab za predstavljanje udruge, spajanje MetaMaska i slanje ETH-a na Sepoliji.
 
 ## Stack (koristi točno ove verzije)
 - Frontend: Vue 3 (script setup), Pinia, Vite, u mapi frontend/
