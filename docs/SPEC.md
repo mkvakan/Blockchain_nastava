@@ -275,4 +275,28 @@ Nema. Količine koje nisu bile zadane u razgovoru, a trebale su konkretan broj, 
 
 ## Sljedivost
 
-Popunjava se u Dijelu 4.
+Kriterij	Test
+K1	K1: vlasnik izdaje 100 LBC korisniku
+K2	K2: administrator izdaje 1 LBC sebi
+K3	K3: obican korisnik ne smije izdati
+K4	K4: izdavanje nule je odbijeno
+K5	K5: izdavanje iznad 100 LBC je odbijeno
+K6	K6: izdavanje do granice od 10000 LBC prolazi
+K7	K7: izdavanje preko 10000 LBC je odbijeno
+K8	K8: izdavanje na nultu adresu je odbijeno
+K9	K9: korisnik salje 4 LBC drugom korisniku
+K10	K10: prijenos veci od salda je odbijen
+K11	K11: prijenos na nultu adresu je odbijen
+K12	K12: transferFrom ne mice tokene
+K13	K13: spaljivanje nije dopusteno
+K14	K14: dodani administrator smije izdati
+K15	K15: korisnik ne smije dodati administratora
+K16	K16: administrator ne moze biti nulta adresa
+K17	K17: ista adresa ne moze biti administrator dvaput
+K18	K18: uklonjeni administrator vise ne smije izdati
+K19	K19: korisnik ne smije ukloniti administratora
+K20	K20: uklanjanje adrese koja nije administrator je odbijeno
+K21	K21: administrator ne moze ukloniti vlasnika
+K22	K22: vlasnik prenosi vlasnistvo
+K23	K23: korisnik ne smije prenijeti vlasnistvo
+K24	K24: vlasnistvo se ne moze prenijeti na nultu adresu

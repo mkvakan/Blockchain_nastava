@@ -46,20 +46,30 @@ Najkorisniji prompt (kopiran u cijelosti): objasni pitanje (pitanj koje postavlj
 Provjera: pregled koda
 Commit:
 
-## T3 - Hardhat, testovi i lokalna mreža
-Cilj termina: Na prošloj vježbi napisao si token i ručno ga provjerio u Remixu. Ručna provjera ne može se
-ponoviti, ne ulazi u Git i lako je zaboraviti jedan slučaj. Danas token seliš u Hardhat, alat u
-kojem se pametni ugovori razvijaju profesionalno: kod se kompajlira, testira automatski i
-objavljuje jednom naredbom.
+## Vježba 4: testovi
+- Prompt: (U docs/SPEC.md su kriteriji prihvaćanja za token (K1, K2, ...), a u
+contracts/LabCoin.sol je ugovor.
+Napiši Hardhat 3 testove u test/LabCoin.test.js: JavaScript (ne TypeScript),
+ESM,
+mocha + chai, ethers v6, na početku:
+import { network } from "hardhat"; const { ethers } = await
+network.connect();
+Pravila:
+- jedan it() po kriteriju tokena, naziv počinje oznakom kriterija (npr. "K3:
+...");
+- za neuspješne kriterije koristi revertedWith s točnom porukom iz ugovora;
+- za događaje koristi emit(...).withArgs(...);
+- svaki test sam priprema stanje u beforeEach, bez ovisnosti o drugim
+testovima;
+- ne mijenjaj ugovor; ako kriterij nije moguće testirati, napiši to kao
+komentar.)
 
-Najkorisniji prompt(kopiran u cijelosti):
-Što je AI napravio dobro:
-Što je AI napravio drugačije nego što sam očekivao:
-Što sam dodao u Agents.md:
-Provjera:
-Commit:
+- Testova: 24, prolazi: 24
+- Greška AI-ja koju sam uočio: --------
+- Mutacijska provjera: maknuo sam require "// require(msg.sender == owner() || administratori[msg.sender], "Samo vlasnik ili administrator smije izdati.");
+", pao je test "K18 i K3"
 
-## T4 - 
+## T5 - 
 cilj Termina: 
 Najkorisniji prompt(kopiran u cijelosti):
 Što je AI napravio dobro:
