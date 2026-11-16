@@ -69,6 +69,17 @@ komentar.)
 - Mutacijska provjera: maknuo sam require "// require(msg.sender == owner() || administratori[msg.sender], "Samo vlasnik ili administrator smije izdati.");
 ", pao je test "K18 i K3"
 
+## Vježba 4: objava na lokalnoj mreži
+- Adresa ugovora / hash transakcije / blok / gas: adresa 0x5FbDB2315678afecb367f032d93F642f64180aa3, transakcija objave 0xc1769adba29e458d51d36a1e9add03ed458d8a457da9f50bc7e6d9c4039d2078, blok 1, gas 2164881.
+
+- Zašto objava troši gas, a čitanje salda ne?:  Objava je transakcija koja na lanac zapisuje novi ugovor, a čitanje salda samo pita čvor za postojeće stanje i ništa ne mijenja, pa se ne plaća gas.
+
+- Zašto je druga transakcija (postaviAdministratora) potrošila puno manje
+gasa od objave?: dodajAdministratora je samo upisala jednu adresu u postojeći ugovor i potrošila 46704 gasa, dok objava na lanac stavlja cijeli bytecode ugovora.
+
+- Što bi se dogodilo s ugovorom da sad ugasim npx hardhat node?: Lokalni lanac živi samo u memoriji tog procesa, pa bi se ugovor izgubio i nakon novog pokretanja čvora trebalo bi ga ponovno objaviti.
+
+
 ## T5 - 
 cilj Termina: 
 Najkorisniji prompt(kopiran u cijelosti):
