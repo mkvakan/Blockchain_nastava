@@ -45,3 +45,25 @@ Najkorisniji prompt (kopiran u cijelosti): objasni pitanje (pitanj koje postavlj
 Što sam dodao u AGENTS.md: ---------
 Provjera: pregled koda
 Commit:
+
+## T3 - Hardhat, testovi i lokalna mreža
+Cilj termina: Na prošloj vježbi napisao si token i ručno ga provjerio u Remixu. Ručna provjera ne može se
+ponoviti, ne ulazi u Git i lako je zaboraviti jedan slučaj. Danas token seliš u Hardhat, alat u
+kojem se pametni ugovori razvijaju profesionalno: kod se kompajlira, testira automatski i
+objavljuje jednom naredbom.
+
+Najkorisniji prompt(kopiran u cijelosti):
+Što je AI napravio dobro:
+Što je AI napravio drugačije nego što sam očekivao:
+Što sam dodao u Agents.md:
+Provjera:
+Commit:
+
+## T4 - 
+cilj Termina: 
+Najkorisniji prompt(kopiran u cijelosti):
+Što je AI napravio dobro:
+Što je AI napravio drugačije nego što sam očekivao:
+Što sam dodao u Agents.md:
+Provjera:
+Commit:
