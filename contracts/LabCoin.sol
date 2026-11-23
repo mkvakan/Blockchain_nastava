@@ -55,6 +55,21 @@ contract LabCoin is ERC20, Ownable, ILabCoinToken {
         revert("Spaljivanje nije dopusteno.");
     }
 
+    function jeAdministrator(address adresa) external view returns (bool) {
+        return administratori[adresa];
+    }
+
+    /// Samo vlasnik. Tudji poziv pada s OwnableUnauthorizedAccount.
+    function postaviAdministratora(address adresa, bool status) external onlyOwner {
+        require(adresa != address(0), "Administrator ne moze biti nulta adresa.");
+        administratori[adresa] = status;
+    }
+
+    /// Samo administrator. Tudji poziv pada s "Nisi administrator".
+    function dodijeliBodove(address, uint256, string calldata) external view {
+        require(administratori[msg.sender], "Nisi administrator");
+    }
+
     /// Uloga: vlasnik. SPEC: K14, K15, K16, K17
     function dodajAdministratora(address administrator) external override {
         require(msg.sender == owner(), "Samo vlasnik smije dodati administratora.");
